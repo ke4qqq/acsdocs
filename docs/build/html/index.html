@@ -118,6 +118,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="administration_guide.html">Apache CloudStack Administration Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#backups">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#monitoring">Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#tuning">Tuning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#configuration-parameters">Configuration Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#system-reliability-and-availability">System Reliability and Availability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#managing-system-vms">Managing System VMs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#storage-administration">Storage Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#hypervisor-host-management">Hypervisor Host Management</a></li>
+</ul>
+</li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="developer_guide.html">CloudStack Installation from Source for Developers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="developer_guide.html#prerequisites">Prerequisites</a></li>
 <li class="toctree-l2"><a class="reference internal" href="developer_guide.html#installing-from-source">Installing from Source</a></li>
@@ -196,6 +210,102 @@
 <li class="toctree-l2"><a class="reference internal" href="networking/midonet.html#introduction-to-the-midonet-plugin">Introduction to the MidoNet Plugin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="networking/midonet.html#using-the-midonet-plugin">Using the MidoNet Plugin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="networking/midonet.html#revision-history">Revision History</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="administratoin-guide">
+<h2>Administratoin Guide<a class="headerlink" href="#administratoin-guide" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="administration_guide.html">Apache CloudStack Administration Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#backups">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#monitoring">Monitoring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#snmp">SNMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#syslog">Syslog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#amqp">AMQP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#jmx">JMX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#api-queries">API Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#tuning">Tuning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#configuration-parameters">Configuration Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#system-reliability-and-availability">System Reliability and Availability</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#ha-for-management-server">HA for Management Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#management-server-load-balancing">Management Server Load Balancing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#limiting-the-rate-of-api-requests">Limiting the Rate of API Requests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#configuring-the-api-request-rate">Configuring the API Request Rate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#limitations-on-api-throttling">Limitations on API Throttling</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#ha-enabled-virtual-machines">HA-Enabled Virtual Machines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#dedicated-ha-hosts">Dedicated HA Hosts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#primary-storage-outage-and-data-loss">Primary Storage Outage and Data Loss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#secondary-storage-outage-and-data-loss">Secondary Storage Outage and Data Loss</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#managing-system-vms">Managing System VMs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#the-system-vm-template">The System VM Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#accessing-system-vms">Accessing System VMs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#multiple-system-vm-support-for-vmware">Multiple System VM Support for VMware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#console-proxy">Console Proxy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#using-a-ssl-certificate-for-the-console-proxy">Using a SSL Certificate for the Console Proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#changing-the-console-proxy-ssl-certificate-and-domain">Changing the Console Proxy SSL Certificate and Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#virtual-router">Virtual Router</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#configuring-the-virtual-router">Configuring the Virtual Router</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#upgrading-a-virtual-router-with-system-service-offerings">Upgrading a Virtual Router with System Service Offerings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#best-practices-for-virtual-routers">Best Practices for Virtual Routers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#secondary-storage-vm">Secondary Storage VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#storage-administration">Storage Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration_guide.html#hypervisor-host-management">Hypervisor Host Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#maintenance-mode">Maintenance mode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#vcenter-and-maintenance-mode">vCenter and Maintenance mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#xenserver-maintenance-mode">XenServer Maintenance Mode</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="administration_guide.html#to-place-a-xenserver-host-in-maintenace-mode">To place a XenServer host in Maintenace Mode</a></li>
+<li class="toctree-l5"><a class="reference internal" href="administration_guide.html#to-take-a-xenserver-host-out-of-maintenance-mode">To take a Xenserver host out of Maintenance mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#disabling-and-enabling-zones-pods-and-clusters">Disabling and enabling Zones, Pods, and Clusters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#removing-hypervisor-hosts">Removing hypervisor hosts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#removing-xenserver-and-kvm-hosts">Removing XenServer and KVM Hosts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#removing-vsphere-hosts">Removing vSphere Hosts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#changing-hypervisor-host-password">Changing hypervisor host password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration_guide.html#overprovisioning-and-service-offering-limits">Overprovisioning and Service Offering Limits</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#limitations-on-over-provisioning-in-kvm-and-xenserver">Limitations on over-provisioning in KVM and XenServer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#requirements-for-over-provisioning">Requirements for Over-Provisioning</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="administration_guide.html#balloon-driver">Balloon Driver</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="administration_guide.html#xenserver">XenServer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="administration_guide.html#vmware">VMware</a></li>
+<li class="toctree-l6"><a class="reference internal" href="administration_guide.html#kvm">KVM</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="administration_guide.html#hypervisor-capabilities">Hypervisor capabilities</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="administration_guide.html#id25">XenServer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="administration_guide.html#vmware-kvm">VMware, KVM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#setting-over-provisioning-rations">Setting Over-Provisioning Rations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="administration_guide.html#service-offering-limits-and-over-provisioning">Service Offering Limits and Over-Provisioning</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

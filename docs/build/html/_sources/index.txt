@@ -35,6 +35,13 @@ Networking Guides
     networking/nicira-plugin 
     networking/midonet
 
+Administratoin Guide
+--------------------
+.. toctree::
+    :maxdepth: 2
+
+   administration_guide
+
 Developer's Guide
 ------------------
 
